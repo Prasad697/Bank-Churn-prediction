@@ -15,8 +15,11 @@ conda create -n classifier python=3.8
 
 ### Git config
 git config --global user.name "your name"
+
 git config --global user.name
+
 git config --global user.email "your git email" 
+
 git config --global user.email
 
 add commit and push files to respective branch
