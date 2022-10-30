@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>CHURN PREDICTION</title>
+</head>
+
+<body>
+CHURN PREDICTION
+
+
+
+    <form action="/predict" method="POST"><br><br>
+        <label>Enter credit score</label> <input type="text" name="credit_score"> <br><br>
+
+        <label>geography</label> 
+        <select name="geography">
+            <option value="Germany">Germany</option>
+            <option value="Spain">Spain</option>
+            <option value="France">France</option>
+        </select> <br><br>
+
+        <label>Gender</label> 
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select> <br><br>
+
+
+        <label>Enter Age</label> <input type="text" name="age"> <br><br>
+        <label>Enter tenure</label> <input type="text" name="tenure"> <br><br>
+        <label>Enter balance</label> <input type="text" name="balance"> <br><br>
+        <label>Enter num_of_products</label> <input type="text" name="num_of_products"> <br><br>
+
+        
+        <label>has_cr_card</label> 
+        <select name="has_cr_card">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select> <br><br>
+
+        
+        <label>is_active_member</label> 
+        <select name="is_active_member">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select> <br><br>
+
+        <label>Enter estimated_salary</label> <input type="text" name="estimated_salary"> <br><br>
+
+        
+
+
+
+        
+
+
+
+
+        <input type="submit">
+
+        <br>
+        {{ prediction }}
+
+    </form>
+
+
+
+
+
+
+</body>
+
+
+</html>
